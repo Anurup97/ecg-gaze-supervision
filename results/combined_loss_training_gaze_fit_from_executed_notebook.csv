@@ -1,0 +1,10 @@
+comparison,model,mean_cosine,mean_MSE,median_cosine
+base_vs_consultant,base,0.858401,0.002538,0.860445
+base_vs_all_clinicians,base,0.884094,0.001920,0.891743
+diagnostic_only_vs_consultant,diagnostic_only,0.858417,0.002538,0.860537
+diagnostic_only_vs_all_clinicians,diagnostic_only,0.884112,0.001920,0.891783
+joint_consultant_vs_consultant,joint_consultant,0.860238,0.002508,0.865330
+joint_all_clinicians_vs_all_clinicians,joint_all_clinicians,0.885964,0.001890,0.894084
+joint_uniform_vs_uniform,joint_uniform,0.988655,0.000162,0.989828
+joint_perm_consultant_vs_permuted_target,joint_perm_consultant,0.860667,0.002521,0.883758
+joint_perm_all_vs_permuted_target,joint_perm_all_clinicians,0.882911,0.001954,0.891314

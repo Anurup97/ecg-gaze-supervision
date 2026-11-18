@@ -1,0 +1,17 @@
+comparison,arm_A,arm_B,metric,difference_A_minus_B,CI_low,CI_high,valid_bootstraps
+diagnostic_only_minus_base,diagnostic_only,base,macro_AUROC,0.001197,-0.000178,0.002661,2276
+diagnostic_only_minus_base,diagnostic_only,base,macro_AP,0.002799,-0.003982,0.007063,2276
+joint_consultant_minus_diagnostic_only,joint_consultant,diagnostic_only,macro_AUROC,-0.000016,-0.000400,0.000354,2276
+joint_consultant_minus_diagnostic_only,joint_consultant,diagnostic_only,macro_AP,0.000001,-0.002980,0.001625,2276
+joint_all_clinicians_minus_diagnostic_only,joint_all_clinicians,diagnostic_only,macro_AUROC,-0.000001,-0.000415,0.000398,2276
+joint_all_clinicians_minus_diagnostic_only,joint_all_clinicians,diagnostic_only,macro_AP,0.000006,-0.002899,0.001660,2276
+joint_uniform_minus_diagnostic_only,joint_uniform,diagnostic_only,macro_AUROC,-0.000123,-0.000402,0.000156,2276
+joint_uniform_minus_diagnostic_only,joint_uniform,diagnostic_only,macro_AP,-0.000155,-0.003130,0.001492,2276
+joint_perm_consultant_minus_diagnostic_only,joint_perm_consultant,diagnostic_only,macro_AUROC,-0.000041,-0.000463,0.000359,2276
+joint_perm_consultant_minus_diagnostic_only,joint_perm_consultant,diagnostic_only,macro_AP,0.000047,-0.002934,0.001719,2276
+joint_perm_all_minus_diagnostic_only,joint_perm_all_clinicians,diagnostic_only,macro_AUROC,-0.000089,-0.000555,0.000360,2276
+joint_perm_all_minus_diagnostic_only,joint_perm_all_clinicians,diagnostic_only,macro_AP,0.000098,-0.002873,0.001735,2276
+joint_consultant_minus_joint_perm_consultant,joint_consultant,joint_perm_consultant,macro_AUROC,0.000024,-0.000067,0.000128,2276
+joint_consultant_minus_joint_perm_consultant,joint_consultant,joint_perm_consultant,macro_AP,-0.000046,-0.000534,0.000294,2276
+joint_all_minus_joint_perm_all,joint_all_clinicians,joint_perm_all_clinicians,macro_AUROC,0.000088,-0.000022,0.000218,2276
+joint_all_minus_joint_perm_all,joint_all_clinicians,joint_perm_all_clinicians,macro_AP,-0.000091,-0.000593,0.000373,2276

@@ -1,0 +1,28 @@
+PASS frozen ECG input hash
+PASS gaze target hash
+PASS base model hash
+PASS consultant/all weight hashes
+PASS CV 5 x 8-train/2-test, seed 2026
+PASS reader populations
+PASS gaze-only training spec
+PASS PTB-XL 23 output classes
+PASS PTB-XL fold counts/no patient overlap
+PASS PTB-XL patient bootstrap
+PASS LUDB record count/resampling
+PASS LUDB endpoint lists
+PASS LUDB bootstrap is distinct
+PASS reviewer controls tied to frozen original models
+PASS historical config differentiated
+PASS presence of 15 author-supplied manifests
+PASS joint-loss frozen input hashes
+PASS joint-loss development/test partition
+PASS joint-loss frozen training protocol
+PASS joint-loss fixed lambda calculation
+PASS joint-loss permutation matches original control
+PASS repeated-permutation manifest scope
+PASS all repeated permutations distinct fixed-point-free
+PASS repeated permutation mapping/index agreement
+PASS additional permutations exclude primary control
+PASS combined-loss original manifest fingerprint
+PASS repeated-permutation original manifest fingerprint
+Validated 27 manifest consistency checks. No datasets/models were executed.

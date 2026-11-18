@@ -1,0 +1,172 @@
+{
+  "NSR": {
+    "row_centres": [
+      81.46356663470783,
+      213.8662511984661,
+      339.1759348034517
+    ],
+    "x_boundaries": [
+      47.25023969319312,
+      385.34995206136176,
+      725.8139980824546,
+      1063.9137104506233,
+      1397.2847555129435
+    ],
+    "image_width": 1481,
+    "image_height": 822,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Normal_Sinus_Rhythm.jpg"
+  },
+  "AFib": {
+    "row_centres": [
+      242.7233940556091,
+      701.9563758389263,
+      1145.8815915627997
+    ],
+    "x_boundaries": [
+      119.1337488015347,
+      904.9324065196549,
+      1690.7310642377754,
+      2476.529721955896,
+      3119.4558964525395
+    ],
+    "image_width": 3260,
+    "image_height": 1774,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Atrial_Fibrillation.png"
+  },
+  "Hyperkalemia": {
+    "row_centres": [
+      280.57489544875216,
+      712.7416129427477,
+      1120.560909732856
+    ],
+    "x_boundaries": [
+      90.07955735405108,
+      1167.452923501054,
+      2232.6525792961133,
+      3297.8522350911726,
+      4387.399311590119
+    ],
+    "image_width": 4515,
+    "image_height": 2168,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Hyperkalemia.jpg"
+  },
+  "AFlutter": {
+    "row_centres": [
+      63.95829338446811,
+      203.74736337488025,
+      334.21716203259837
+    ],
+    "x_boundaries": [
+      41.55465004793888,
+      384.03787152444886,
+      719.5316395014381,
+      1069.0043144774688,
+      1390.5191754554169
+    ],
+    "image_width": 1482,
+    "image_height": 810,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Atrial_Flutter.jpg"
+  },
+  "VTach": {
+    "row_centres": [
+      158.2488015340365,
+      284.3897411313519,
+      413.1049856184085
+    ],
+    "x_boundaries": [
+      52.660594439118086,
+      395.04314477468836,
+      729.7027804410352,
+      1082.38255033557,
+      1411.8935762224346
+    ],
+    "image_width": 1481,
+    "image_height": 895,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Ventricular_Tachycardia.jpg"
+  },
+  "WPW": {
+    "row_centres": [
+      121.47890699904133,
+      241.85282837967407,
+      374.26414189837016
+    ],
+    "x_boundaries": [
+      31.520134228188113,
+      318.010067114094,
+      597.2775647171619,
+      874.1375838926173,
+      1148.5901246404596
+    ],
+    "image_width": 1210,
+    "image_height": 837,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Wolf_Parkinson_White_Syndrome.jpg"
+  },
+  "VentPaced": {
+    "row_centres": [
+      80.82694151486123,
+      224.03307766059459,
+      372.5431447746886
+    ],
+    "x_boundaries": [
+      44.37130600571959,
+      434.617254528122,
+      801.1320305052432,
+      1178.193994280267,
+      1563.166348903718
+    ],
+    "image_width": 1656,
+    "image_height": 922,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Ventricular_Paced_Rhythm.jpg"
+  },
+  "LBBB": {
+    "row_centres": [
+      115.15105162523935,
+      246.84130019120482,
+      378.5315487571703
+    ],
+    "x_boundaries": [
+      50.65869980879563,
+      392.5468451242831,
+      726.8374760994265,
+      1066.1931166347995,
+      1405.548757170172
+    ],
+    "image_width": 1480,
+    "image_height": 883,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Left_Bundle_Branch_Block.jpg"
+  },
+  "STEMI": {
+    "row_centres": [
+      159.07934990439844,
+      418.582217973232,
+      673.6108986615684
+    ],
+    "x_boundaries": [
+      84.24378585086072,
+      746.4235181644361,
+      1408.6032504780114,
+      2057.3604206500954,
+      2719.540152963671
+    ],
+    "image_width": 2854,
+    "image_height": 1560,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/STEMI.png"
+  },
+  "CompleteHeartBlock": {
+    "row_centres": [
+      119.94263862332718,
+      258.91491395793514,
+      392.8336520076483
+    ],
+    "x_boundaries": [
+      48.16539196940744,
+      386.75239005736137,
+      725.3393881453154,
+      1058.8728489483747,
+      1405.0401529636706
+    ],
+    "image_width": 1482,
+    "image_height": 881,
+    "image_path": "eye_tracking/eye-tracking-dataset-for-the-12-lead-electrocardiogram-interpretation-of-medical-practitioners-and-students-1.0.0/ECGs/ECG_Images/Complete_Heart_Block.jpg"
+  }
+}

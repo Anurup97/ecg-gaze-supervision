@@ -1,0 +1,240 @@
+TensorFlow deterministic operations enabled.
+
+==============================================================================================================
+FROZEN INPUT VERIFICATION
+==============================================================================================================
+Base model: 12 leads.h5
+Base SHA256: cb1b262a4157f567e9ea5d7133e29b86e789a8be0b3f69eee73e4f783e55b01b
+Gaze X SHA256: 6ffa58d892fddeebaed79994173189cb88e397811e71dce7cd0b53a564d290d2
+Gaze target SHA256: 30aa83f7a4d8f1f109cf50bbd44796e7a6a1e8fcab28af5dd452f9d5b8a4fc60
+✓ Frozen base model, gaze inputs, and gaze targets verified.
+
+==============================================================================================================
+PTB-XL LABEL AUDIT
+==============================================================================================================
+Folds 1-9: 19601
+Fold 10: 2198
+Fold-10 patients: 1904
+All-zero folds-1-9 rows: 371
+All-zero fold-10 rows: 40
+Reusing waveform cache: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/cache/ptbxl_folds1to9_X.npy
+Reusing waveform cache: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/cache/ptbxl_fold10_X.npy
+
+Train waveform shape: (19601, 12, 1000, 1)
+Test waveform shape: (2198, 12, 1000, 1)
+
+Frozen gaze augmentation: (400, 12, 1000, 1)
+
+==============================================================================================================
+TRAINABLE TAIL
+==============================================================================================================
+conv2d_10
+conv2d_11
+dense
+dense_1
+dense_2
+Trainable parameter tensors: 10
+
+==============================================================================================================
+CALCULATING INITIAL LOSS SCALES
+==============================================================================================================
+Initial diagnostic BCE: 0.06042846
+Initial consultant gaze MSE: 0.00253821
+Initial all-clinician gaze MSE: 0.00192029
+Mean initial real-gaze MSE: 0.00222925
+Calculated lambda: 27.10707427
+
+Reusing PRE-EXISTING frozen combined-loss manifest.
+
+FROZEN lambda = 27.10707427
+Do not change lambda or the training definition after viewing results.
+
+Diagnostic batches per epoch: 154
+Gaze examples consumed per PTB epoch: 2464
+Equivalent passes through 400 augmented gaze examples over all epochs: 24.64
+
+==============================================================================================================
+TRAINING: diagnostic_only
+==============================================================================================================
+Existing completed weights found. Loading rather than retraining.
+Completed diagnostic_only
+
+==============================================================================================================
+TRAINING: joint_consultant
+==============================================================================================================
+Epoch 1/4 | BCE=0.060069 | gaze MSE=0.00253900 | total=0.128894
+Epoch 2/4 | BCE=0.059461 | gaze MSE=0.00252903 | total=0.128016
+Epoch 3/4 | BCE=0.059322 | gaze MSE=0.00252333 | total=0.127722
+Epoch 4/4 | BCE=0.059219 | gaze MSE=0.00252182 | total=0.127578
+
+Changed layers:
+  conv2d_10                      max|Δ|=0.0054165451
+  conv2d_11                      max|Δ|=0.0014547557
+  dense                          max|Δ|=0.001061934
+  dense_1                        max|Δ|=0.0016891563
+  dense_2                        max|Δ|=0.0050187856
+Saved: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/models/joint_consultant.weights.h5
+Completed joint_consultant
+
+==============================================================================================================
+TRAINING: joint_all_clinicians
+==============================================================================================================
+Epoch 1/4 | BCE=0.060069 | gaze MSE=0.00191863 | total=0.112077
+Epoch 2/4 | BCE=0.059461 | gaze MSE=0.00191038 | total=0.111246
+Epoch 3/4 | BCE=0.059322 | gaze MSE=0.00190430 | total=0.110942
+Epoch 4/4 | BCE=0.059218 | gaze MSE=0.00190030 | total=0.110730
+
+Changed layers:
+  conv2d_10                      max|Δ|=0.0054462384
+  conv2d_11                      max|Δ|=0.0014540926
+  dense                          max|Δ|=0.0010583745
+  dense_1                        max|Δ|=0.0016887654
+  dense_2                        max|Δ|=0.0050140768
+Saved: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/models/joint_all_clinicians.weights.h5
+Completed joint_all_clinicians
+
+==============================================================================================================
+TRAINING: joint_uniform
+==============================================================================================================
+Epoch 1/4 | BCE=0.060070 | gaze MSE=0.00017089 | total=0.064702
+Epoch 2/4 | BCE=0.059461 | gaze MSE=0.00016861 | total=0.064031
+Epoch 3/4 | BCE=0.059322 | gaze MSE=0.00016621 | total=0.063827
+Epoch 4/4 | BCE=0.059214 | gaze MSE=0.00016360 | total=0.063649
+
+Changed layers:
+  conv2d_10                      max|Δ|=0.0049969843
+  conv2d_11                      max|Δ|=0.0014512837
+  dense                          max|Δ|=0.0010512397
+  dense_1                        max|Δ|=0.0016836149
+  dense_2                        max|Δ|=0.0050047189
+Saved: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/models/joint_uniform.weights.h5
+Completed joint_uniform
+
+==============================================================================================================
+TRAINING: joint_perm_consultant
+==============================================================================================================
+Epoch 1/4 | BCE=0.060068 | gaze MSE=0.00254597 | total=0.129082
+Epoch 2/4 | BCE=0.059459 | gaze MSE=0.00254337 | total=0.128402
+Epoch 3/4 | BCE=0.059321 | gaze MSE=0.00253134 | total=0.127938
+Epoch 4/4 | BCE=0.059216 | gaze MSE=0.00251904 | total=0.127500
+
+Changed layers:
+  conv2d_10                      max|Δ|=0.0055648279
+  conv2d_11                      max|Δ|=0.0014536083
+  dense                          max|Δ|=0.0010629197
+  dense_1                        max|Δ|=0.0016925859
+  dense_2                        max|Δ|=0.0050107986
+Saved: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/models/joint_perm_consultant.weights.h5
+Completed joint_perm_consultant
+
+==============================================================================================================
+TRAINING: joint_perm_all_clinicians
+==============================================================================================================
+Epoch 1/4 | BCE=0.060068 | gaze MSE=0.00197383 | total=0.113573
+Epoch 2/4 | BCE=0.059460 | gaze MSE=0.00197049 | total=0.112874
+Epoch 3/4 | BCE=0.059321 | gaze MSE=0.00196032 | total=0.112459
+Epoch 4/4 | BCE=0.059216 | gaze MSE=0.00195204 | total=0.112130
+
+Changed layers:
+  conv2d_10                      max|Δ|=0.0055014207
+  conv2d_11                      max|Δ|=0.0014587566
+  dense                          max|Δ|=0.0010454336
+  dense_1                        max|Δ|=0.0016901027
+  dense_2                        max|Δ|=0.0050057769
+Saved: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/models/joint_perm_all_clinicians.weights.h5
+Completed joint_perm_all_clinicians
+
+==============================================================================================================
+PATIENT-CLUSTER BOOTSTRAP
+==============================================================================================================
+Bootstrap draws: 500/3000 | valid: 381
+Bootstrap draws: 1000/3000 | valid: 767
+Bootstrap draws: 1250/3000 | valid: 949
+Bootstrap draws: 1750/3000 | valid: 1327
+Bootstrap draws: 2000/3000 | valid: 1519
+Bootstrap draws: 2250/3000 | valid: 1707
+Bootstrap draws: 2500/3000 | valid: 1890
+Bootstrap draws: 2750/3000 | valid: 2086
+Bootstrap draws: 3000/3000 | valid: 2276
+
+
+
+========================================================================================================================
+MANUSCRIPT JOINT-LOSS RESULTS
+========================================================================================================================
+
+FROZEN DESIGN
+------------------------------------------------------------------------------------------------------------------------
+PTB-XL diagnostic training ECGs: 19601
+PTB-XL fold-10 test ECGs: 2198
+Initial diagnostic BCE: 0.06042846
+Initial consultant gaze MSE: 0.00253821
+Initial all-clinician gaze MSE: 0.00192029
+Frozen lambda: 27.10707427
+Learning rate: 1e-05
+Epochs: 4
+Diagnostic batch size: 128
+Gaze batch size: 16
+Equivalent gaze passes: 24.64
+Valid patient-cluster bootstrap replicates: 2276/3000
+
+POINT ESTIMATES
+------------------------------------------------------------------------------------------------------------------------
+                    model  macro_AUROC  macro_AP  micro_AUROC  micro_AP
+                     base     0.921804  0.471845     0.970430  0.783934
+          diagnostic_only     0.923002  0.474644     0.970778  0.786670
+         joint_consultant     0.922985  0.474645     0.970747  0.786648
+     joint_all_clinicians     0.923001  0.474651     0.970758  0.786656
+            joint_uniform     0.922879  0.474489     0.970751  0.786601
+    joint_perm_consultant     0.922961  0.474691     0.970748  0.786607
+joint_perm_all_clinicians     0.922913  0.474742     0.970761  0.786648
+
+TRAINING-CASE GAZE FIT
+------------------------------------------------------------------------------------------------------------------------
+                              comparison                     model  mean_cosine  mean_MSE  median_cosine
+                      base_vs_consultant                      base     0.858401  0.002538       0.860445
+                  base_vs_all_clinicians                      base     0.884094  0.001920       0.891743
+           diagnostic_only_vs_consultant           diagnostic_only     0.858417  0.002538       0.860537
+       diagnostic_only_vs_all_clinicians           diagnostic_only     0.884112  0.001920       0.891783
+          joint_consultant_vs_consultant          joint_consultant     0.860238  0.002508       0.865330
+  joint_all_clinicians_vs_all_clinicians      joint_all_clinicians     0.885964  0.001890       0.894084
+                joint_uniform_vs_uniform             joint_uniform     0.988655  0.000162       0.989828
+joint_perm_consultant_vs_permuted_target     joint_perm_consultant     0.860667  0.002521       0.883758
+       joint_perm_all_vs_permuted_target joint_perm_all_clinicians     0.882911  0.001954       0.891314
+
+PAIRED PATIENT-CLUSTER BOOTSTRAP COMPARISONS
+------------------------------------------------------------------------------------------------------------------------
+                                  comparison                     arm_A                     arm_B      metric  difference_A_minus_B    CI_low  CI_high  valid_bootstraps
+                  diagnostic_only_minus_base           diagnostic_only                      base macro_AUROC              0.001197 -0.000178 0.002661              2276
+                  diagnostic_only_minus_base           diagnostic_only                      base    macro_AP              0.002799 -0.003982 0.007063              2276
+      joint_consultant_minus_diagnostic_only          joint_consultant           diagnostic_only macro_AUROC             -0.000016 -0.000400 0.000354              2276
+      joint_consultant_minus_diagnostic_only          joint_consultant           diagnostic_only    macro_AP              0.000001 -0.002980 0.001625              2276
+  joint_all_clinicians_minus_diagnostic_only      joint_all_clinicians           diagnostic_only macro_AUROC             -0.000001 -0.000415 0.000398              2276
+  joint_all_clinicians_minus_diagnostic_only      joint_all_clinicians           diagnostic_only    macro_AP              0.000006 -0.002899 0.001660              2276
+         joint_uniform_minus_diagnostic_only             joint_uniform           diagnostic_only macro_AUROC             -0.000123 -0.000402 0.000156              2276
+         joint_uniform_minus_diagnostic_only             joint_uniform           diagnostic_only    macro_AP             -0.000155 -0.003130 0.001492              2276
+ joint_perm_consultant_minus_diagnostic_only     joint_perm_consultant           diagnostic_only macro_AUROC             -0.000041 -0.000463 0.000359              2276
+ joint_perm_consultant_minus_diagnostic_only     joint_perm_consultant           diagnostic_only    macro_AP              0.000047 -0.002934 0.001719              2276
+        joint_perm_all_minus_diagnostic_only joint_perm_all_clinicians           diagnostic_only macro_AUROC             -0.000089 -0.000555 0.000360              2276
+        joint_perm_all_minus_diagnostic_only joint_perm_all_clinicians           diagnostic_only    macro_AP              0.000098 -0.002873 0.001735              2276
+joint_consultant_minus_joint_perm_consultant          joint_consultant     joint_perm_consultant macro_AUROC              0.000024 -0.000067 0.000128              2276
+joint_consultant_minus_joint_perm_consultant          joint_consultant     joint_perm_consultant    macro_AP             -0.000046 -0.000534 0.000294              2276
+              joint_all_minus_joint_perm_all      joint_all_clinicians joint_perm_all_clinicians macro_AUROC              0.000088 -0.000022 0.000218              2276
+              joint_all_minus_joint_perm_all      joint_all_clinicians joint_perm_all_clinicians    macro_AP             -0.000091 -0.000593 0.000373              2276
+
+OUTPUT FILES
+------------------------------------------------------------------------------------------------------------------------
+Manifest: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/combined_loss_manifest.json
+Manifest SHA256: 1f4f86ba41dae20f3d6387accc04b7d8a322919b6688a62cc4af3b103623ef27
+Point estimates: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/combined_loss_point_estimates.csv
+Training-case gaze fit: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/combined_loss_training_gaze_fit.csv
+Bootstrap comparisons: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/combined_loss_bootstrap_comparisons.csv
+Model weights: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/models
+Predictions: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/predictions
+Training histories: definitive_clean_gaze/reviewer_controls/combined_loss_experiment/history
+
+========================================================================================================================
+IMPORTANT
+========================================================================================================================
+Do not change lambda, learning rate, epoch number, the fixed permutation, or selectively rerun arms after inspecting these results.
+Paste everything from 'MANUSCRIPT JOINT-LOSS RESULTS' onward back into ChatGPT.

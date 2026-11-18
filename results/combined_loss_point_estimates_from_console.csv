@@ -1,0 +1,8 @@
+arm,macro_AUROC,macro_AP,micro_AUROC,micro_AP
+base,0.921804,0.471845,0.97043,0.783934
+diagnostic_only,0.923002,0.474644,0.970778,0.78667
+joint_consultant,0.922985,0.474645,0.970747,0.786648
+joint_all_clinicians,0.923001,0.474651,0.970758,0.786656
+joint_uniform,0.922879,0.474489,0.970751,0.786601
+joint_perm_consultant,0.922961,0.474691,0.970748,0.786607
+joint_perm_all_clinicians,0.922913,0.474742,0.970761,0.786648

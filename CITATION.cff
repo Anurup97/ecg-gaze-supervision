@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and the archived software release when using this code."
+type: software
+title: "ECG gaze-supervision: matched-control experiments and diagnostic preservation"
+authors:
+  - family-names: Mukherjee
+    given-names: Anurup
+  - family-names: Shergill
+    given-names: Sukhi
+  - family-names: Ang
+    given-names: Jim
+keywords:
+  - ECG
+  - clinician eye tracking
+  - machine learning
+  - gaze supervision
+  - reproducible research

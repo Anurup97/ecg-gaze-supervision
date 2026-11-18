@@ -1,0 +1,53 @@
+{
+  "stage": "Step 4B PTB-XL fold-10 frozen diagnostic evaluation",
+  "test_partition": "PTB-XL strat_fold 10",
+  "test_records": 2198,
+  "all_zero_target_records_retained": 40,
+  "classes": [
+    "AMI",
+    "CLBBB",
+    "CRBBB",
+    "ILBBB",
+    "IMI",
+    "IRBBB",
+    "ISCA",
+    "ISCI",
+    "ISC_",
+    "IVCD",
+    "LAFB/LPFB",
+    "LAO/LAE",
+    "LMI",
+    "LVH",
+    "NORM",
+    "NST_",
+    "PMI",
+    "RAO/RAE",
+    "RVH",
+    "SEHYP",
+    "STTC",
+    "WPW",
+    "_AVB"
+  ],
+  "n_classes": 23,
+  "input_sampling_frequency_Hz": 100,
+  "input_shape": [
+    12,
+    1000,
+    1
+  ],
+  "base_model_sha256": "cb1b262a4157f567e9ea5d7133e29b86e789a8be0b3f69eee73e4f783e55b01b",
+  "consultant_weights_sha256": "66165c8108c5d37f7bf6ca5c64e4da434b1f2b8705ef4599268d6f8620653484",
+  "all_clinician_weights_sha256": "9202c256983e2e415565aa0f949200e7932458646cb6531b919c7204c9d139fc",
+  "metrics": [
+    "per-class AUROC",
+    "per-class Average Precision",
+    "macro AUROC",
+    "macro Average Precision",
+    "micro AUROC",
+    "micro Average Precision"
+  ],
+  "threshold_tuning_performed": false,
+  "training_performed": false,
+  "records_excluded": 0,
+  "primary_comparison": "frozen gaze models versus unchanged base model on identical fold-10 records"
+}

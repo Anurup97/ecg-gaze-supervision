@@ -1,0 +1,69 @@
+{
+  "seed": 42,
+  "base_model": "12 leads.h5",
+  "standard_lead_order": [
+    "I",
+    "II",
+    "III",
+    "aVR",
+    "aVL",
+    "aVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "display_lead_order": [
+    [
+      "I",
+      "aVR",
+      "V1",
+      "V4"
+    ],
+    [
+      "II",
+      "aVL",
+      "V2",
+      "V5"
+    ],
+    [
+      "III",
+      "aVF",
+      "V3",
+      "V6"
+    ]
+  ],
+  "attention_layer": "add_3",
+  "feature_layer": "dense_1",
+  "only_trainable_layer": "conv2d_10",
+  "gaze_loss": "mean_squared_error",
+  "classification_loss": null,
+  "learning_rate": 0.0001,
+  "epochs": 25,
+  "augmentations_per_ECG": 40,
+  "noise_SD": 0.03,
+  "training_batch_size": 16,
+  "gaze_cross_validation": "5-fold ECG-level held-out",
+  "consultant_readers": 9,
+  "all_clinician_readers": 20,
+  "all_clinician_groups": [
+    "Consultant",
+    "Fellow",
+    "resident"
+  ],
+  "reader_aggregation": "Each reader's 12-lead dwell-time vector normalised separately, then readers averaged equally.",
+  "PTBXL_evaluation": "5-fold OOF logistic-regression probing; patient-grouped where patient_id available",
+  "LUDB_evaluation": "5-fold OOF logistic-regression probing using dedicated metadata columns",
+  "bootstrap_repetitions": 5000,
+  "grid_bounds_fraction": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+  ],
+  "cell_pad_x": 0.03,
+  "cell_pad_y": 0.05,
+  "pseudo_signal_method": "Per-lead 3x4 image crop; row/column background suppression; vertical centre-of-mass of residual dark trace; interpolation; Savitzky-Golay smoothing; per-lead z-normalisation."
+}

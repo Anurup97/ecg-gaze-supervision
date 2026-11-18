@@ -1,0 +1,23 @@
+scripts/00_verify_frozen_inputs.py: PASS
+scripts/controls/07_matched_controls_original_notebook.py: PASS
+scripts/controls/08_repeated_permutation_sensitivity.py: PASS
+scripts/controls/09_lead_occlusion_validation.py: PASS
+scripts/core/01a_target_assembly_and_audit.py: PASS
+scripts/core/01b_target_conditioning_and_manifest.py: PASS
+scripts/core/02_heldout_gaze_cv.py: PASS
+scripts/core/02b_population_comparison.py: PASS
+scripts/core/03_full_gaze_finetuning.py: PASS
+scripts/core/03b_freeze_model_hashes.py: PASS
+scripts/core/04a_ptbxl_provenance_audit.py: PASS
+scripts/core/04b_ptbxl_fold10_evaluation.py: PASS
+scripts/core/04c_ptbxl_bootstrap.py: PASS
+scripts/core/04d_bootstrap_summary.py: PASS
+scripts/core/05a_ludb_provenance_audit.py: PASS
+scripts/core/05b1_ludb_ischaemia_endpoint.py: PASS
+scripts/core/05b_ludb_freeze_tasks.py: PASS
+scripts/core/05c_ludb_transfer.py: PASS
+scripts/core/05d_ludb_bootstrap.py: PASS
+scripts/core/06_visualize_lead_profiles.py: PASS
+scripts/reconstruction/00_v9_final_lbbb_patch.py: PASS
+
+Post-manifest update: 23 Python sources compile successfully via Python compile() (no datasets/models loaded).

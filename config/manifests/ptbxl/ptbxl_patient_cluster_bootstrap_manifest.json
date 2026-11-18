@@ -1,0 +1,17 @@
+{
+  "stage": "Step 4C patient-cluster paired bootstrap",
+  "source": "definitive_clean_gaze/ptbxl_evaluation/ptbxl_fold10_predictions.csv",
+  "bootstrap_seed": 2026,
+  "bootstrap_replicates": 3000,
+  "resampling_unit": "patient",
+  "unique_patients": 1904,
+  "ECG_records": 2198,
+  "confidence_interval": "2.5th to 97.5th percentile",
+  "comparisons": [
+    "consultant_vs_base",
+    "all_clinicians_vs_base",
+    "all_clinicians_vs_consultant"
+  ],
+  "model_inference_performed": false,
+  "training_performed": false
+}

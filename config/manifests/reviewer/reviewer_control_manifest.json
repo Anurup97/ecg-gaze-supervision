@@ -1,0 +1,33 @@
+{
+  "analysis": "Reviewer-requested decisive auxiliary-target controls",
+  "training_runs": 3,
+  "training_regime": "identical to original Step 3 except target",
+  "targets": [
+    "uniform 1/12 across 12 leads",
+    "permuted consultant gaze",
+    "permuted all-clinician gaze"
+  ],
+  "same_permutation_for_both_gaze_populations": true,
+  "permuted_indices": [
+    9,
+    8,
+    1,
+    0,
+    6,
+    4,
+    5,
+    2,
+    7,
+    3
+  ],
+  "uniform_weights_sha256": "72ed7acfd014e8816e32d074ef3114af243813ddc305090943cfbb3a5d6bb50b",
+  "permuted_consultant_weights_sha256": "de59dbf56246c776950f9881ab85713361cb0549f19662b5e3cdb8a4b86fcabd",
+  "permuted_all_clinician_weights_sha256": "09cea62c5dd613854fd053fb2d4e97128a25249e1ac22ef9c6f78b5a306d66ad",
+  "base_model_sha256": "cb1b262a4157f567e9ea5d7133e29b86e789a8be0b3f69eee73e4f783e55b01b",
+  "original_consultant_model_sha256": "66165c8108c5d37f7bf6ca5c64e4da434b1f2b8705ef4599268d6f8620653484",
+  "original_all_clinician_model_sha256": "9202c256983e2e415565aa0f949200e7932458646cb6531b919c7204c9d139fc",
+  "PTBXL_partition": "strat_fold 10",
+  "PTBXL_records": 2198,
+  "threshold_tuning": false,
+  "control_selection_based_on_results": false
+}

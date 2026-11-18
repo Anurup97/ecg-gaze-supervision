@@ -1,0 +1,41 @@
+{
+  "stage": "Step 5A LUDB read-only provenance and endpoint audit",
+  "LUDB_root": "Test ECG",
+  "ludb_csv_shape": [
+    200,
+    12
+  ],
+  "WFDB_record_count": 200,
+  "sampling_frequencies": [
+    500.0
+  ],
+  "sample_lengths": [
+    5000
+  ],
+  "lead_counts": [
+    12
+  ],
+  "lead_orders": [
+    "I | II | III | AVR | AVL | AVF | V1 | V2 | V3 | V4 | V5 | V6"
+  ],
+  "frozen_classifier_expected_sampling_frequency_Hz": 100,
+  "frozen_classifier_expected_samples": 1000,
+  "LUDB_to_classifier_resampling_required": true,
+  "resampling_performed_in_this_step": false,
+  "diagnostic_mapping_performed": false,
+  "model_inference_performed": false,
+  "training_performed": false,
+  "historical_code_files_found": [
+    "Test on LUDB all classes.ipynb",
+    "Re-analysis.ipynb",
+    "Untitled.ipynb",
+    "Test on LUDB.ipynb",
+    "using the manual digitization.ipynb",
+    "semi manual digitiation.ipynb",
+    "Post manual annotation.ipynb",
+    "Version 2.ipynb",
+    "reanalysis with manual annotation.ipynb",
+    "Re-analysis QC2.ipynb",
+    "Test ECG/SHA256SUMS.txt"
+  ]
+}

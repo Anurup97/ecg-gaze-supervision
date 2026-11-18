@@ -1,0 +1,23 @@
+{
+  "experiment": "Definitive clean gaze-aligned ECG experiment",
+  "stage": "Step 3: final full-data gaze models",
+  "training_ECG_count": 10,
+  "attention_readout": "RMS activation energy from add_3 across temporal and channel axes, normalised across 12 leads.",
+  "trainable_layer": "conv2d_10",
+  "loss": "gaze-only mean squared error",
+  "epochs": 25,
+  "augmentations_per_ECG": 40,
+  "gaussian_noise_sigma": 0.03,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "same_augmented_inputs_between_populations": true,
+  "same_batch_order_between_populations": true,
+  "consultant_weights": "definitive_clean_gaze/final_models/clean_consultant.weights.h5",
+  "consultant_weights_sha256": "66165c8108c5d37f7bf6ca5c64e4da434b1f2b8705ef4599268d6f8620653484",
+  "all_clinician_weights": "definitive_clean_gaze/final_models/clean_all_clinicians.weights.h5",
+  "all_clinician_weights_sha256": "9202c256983e2e415565aa0f949200e7932458646cb6531b919c7204c9d139fc",
+  "frozen_V9_sha256": "6ffa58d892fddeebaed79994173189cb88e397811e71dce7cd0b53a564d290d2",
+  "frozen_target_sha256": "30aa83f7a4d8f1f109cf50bbd44796e7a6a1e8fcab28af5dd452f9d5b8a4fc60",
+  "base_model_sha256": "cb1b262a4157f567e9ea5d7133e29b86e789a8be0b3f69eee73e4f783e55b01b",
+  "generalisation_results_source": "Step 2 five-fold held-out-ECG evaluation; full-data alignment values are training QC only."
+}

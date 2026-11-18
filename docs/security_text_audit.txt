@@ -1,0 +1,3 @@
+Automated plaintext spot-check for hard-coded home-directory paths and typical credential strings in new combined-loss source/console: no matches found.
+All Python files passed syntax compilation. Source files have NOT been rerun against the original ECG data and models.
+This is NOT a guarantee of the absence of secrets or licence-restricted content; inspect staged files manually before public release.

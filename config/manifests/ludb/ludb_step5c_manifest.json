@@ -1,0 +1,37 @@
+{
+  "stage": "Step 5C LUDB frozen external representation-transfer evaluation",
+  "interpretation": "External linear-probe evaluation of frozen ECG representations; NOT direct validation of the PTB-XL 23-class diagnostic head.",
+  "LUDB_records": 200,
+  "preprocessed_LUDB_sha256": "9e1b85d67a22ae26a6b45460dc76ec05fbed1d386c843b75707b89f2ae4cb503",
+  "native_sampling_frequency_Hz": 500,
+  "model_sampling_frequency_Hz": 100,
+  "resampling": "scipy.signal.resample_poly(up=1, down=5, axis=time)",
+  "additional_amplitude_normalisation": false,
+  "feature_layer": "dense_1",
+  "feature_dimension": 64,
+  "primary_tasks": [
+    "Conduction",
+    "LVH",
+    "Ischaemia_related"
+  ],
+  "exploratory_tasks": [
+    "AFib",
+    "Paced"
+  ],
+  "ischaemia_endpoint": "Positive: definite 'Ischemia:', 'Scar formation:' or 'STEMI:' annotation. Negative: empty Ischemia field. Undefined ischemia/scar/supp.NSTEMI-only records excluded.",
+  "ischaemia_N": 188,
+  "ischaemia_positive": 39,
+  "cross_validation": "5-fold StratifiedKFold out-of-fold",
+  "CV_seed": 2026,
+  "probe": "Training-fold StandardScaler followed by logistic regression (C=1.0, lbfgs, class_weight=balanced).",
+  "threshold_for_secondary_classification_metrics": 0.5,
+  "primary_transfer_metrics": [
+    "AUROC",
+    "Average Precision"
+  ],
+  "gaze_model_training_performed": false,
+  "endpoint_tuning_after_model_inference": false,
+  "base_model_sha256": "cb1b262a4157f567e9ea5d7133e29b86e789a8be0b3f69eee73e4f783e55b01b",
+  "consultant_weights_sha256": "66165c8108c5d37f7bf6ca5c64e4da434b1f2b8705ef4599268d6f8620653484",
+  "all_clinician_weights_sha256": "9202c256983e2e415565aa0f949200e7932458646cb6531b919c7204c9d139fc"
+}

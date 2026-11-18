@@ -1,0 +1,73 @@
+{
+  "stage": "Step 5B frozen LUDB downstream-task definition",
+  "analysis_type": "external frozen-representation linear-probe evaluation",
+  "not_direct_23class_validation": true,
+  "records": 200,
+  "primary_tasks": [
+    "Conduction",
+    "LVH",
+    "Ischaemia_related"
+  ],
+  "exploratory_tasks": [
+    "AFib",
+    "Paced"
+  ],
+  "task_counts": [
+    {
+      "task": "Conduction",
+      "role": "primary",
+      "N": 200,
+      "positive": 66,
+      "negative": 134,
+      "excluded_indeterminate": 0,
+      "prevalence": 0.33
+    },
+    {
+      "task": "LVH",
+      "role": "primary",
+      "N": 200,
+      "positive": 108,
+      "negative": 92,
+      "excluded_indeterminate": 0,
+      "prevalence": 0.54
+    },
+    {
+      "task": "Ischaemia_related",
+      "role": "primary",
+      "N": 188,
+      "positive": 39,
+      "negative": 149,
+      "excluded_indeterminate": 12,
+      "prevalence": 0.2074468085106383
+    },
+    {
+      "task": "AFib",
+      "role": "exploratory",
+      "N": 200,
+      "positive": 15,
+      "negative": 185,
+      "excluded_indeterminate": 0,
+      "prevalence": 0.075
+    },
+    {
+      "task": "Paced",
+      "role": "exploratory",
+      "N": 200,
+      "positive": 10,
+      "negative": 190,
+      "excluded_indeterminate": 0,
+      "prevalence": 0.05
+    }
+  ],
+  "feature_layer": "dense_1",
+  "feature_dimension": 64,
+  "native_sampling_frequency_Hz": 500,
+  "native_samples": 5000,
+  "model_sampling_frequency_Hz": 100,
+  "model_samples": 1000,
+  "resampling": "scipy.signal.resample_poly(up=1, down=5, axis=time)",
+  "amplitude_normalisation": "none",
+  "model_inference_performed": false,
+  "probe_training_performed": false,
+  "gaze_model_training_performed": false
+}

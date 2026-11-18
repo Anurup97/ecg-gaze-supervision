@@ -1,0 +1,33 @@
+{
+  "stage": "Step 5D LUDB paired bootstrap from frozen OOF predictions",
+  "source_predictions": "definitive_clean_gaze/ludb_evaluation/ludb_step5c_oof_predictions.csv",
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 2026,
+  "resampling_unit": "LUDB record (one record per unique LUDB ID)",
+  "paired": true,
+  "same_bootstrap_sample_for_all_models": true,
+  "confidence_interval": "percentile 95% CI (2.5th, 97.5th percentiles)",
+  "primary_tasks": [
+    "Conduction",
+    "LVH",
+    "Ischaemia_related"
+  ],
+  "exploratory_tasks": [
+    "AFib",
+    "Paced"
+  ],
+  "primary_metrics": [
+    "AUROC",
+    "Average Precision"
+  ],
+  "secondary_metric": "balanced accuracy",
+  "comparisons": [
+    "CONSULTANT_vs_BASE",
+    "ALL_CLINICIANS_vs_BASE",
+    "ALL_CLINICIANS_vs_CONSULTANT"
+  ],
+  "model_inference_performed": false,
+  "linear_probe_training_performed": false,
+  "gaze_model_training_performed": false,
+  "endpoint_changes_performed": false
+}

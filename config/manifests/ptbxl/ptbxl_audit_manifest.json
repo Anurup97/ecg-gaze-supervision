@@ -1,0 +1,63 @@
+{
+  "stage": "Step 4A PTB-XL read-only provenance audit",
+  "ptbxl_root": "ptb-xl",
+  "metadata_records": 21799,
+  "fold_10_records": 2198,
+  "folds_1_to_9_records": 19601,
+  "patient_overlap_between_folds_1_to_9_and_10": 0,
+  "model_class_order": [
+    "AMI",
+    "CLBBB",
+    "CRBBB",
+    "ILBBB",
+    "IMI",
+    "IRBBB",
+    "ISCA",
+    "ISCI",
+    "ISC_",
+    "IVCD",
+    "LAFB/LPFB",
+    "LAO/LAE",
+    "LMI",
+    "LVH",
+    "NORM",
+    "NST_",
+    "PMI",
+    "RAO/RAE",
+    "RVH",
+    "SEHYP",
+    "STTC",
+    "WPW",
+    "_AVB"
+  ],
+  "n_model_classes": 23,
+  "fold10_missing_classes": [],
+  "fold10_all_zero_rows": 40,
+  "raw_signal_shape": [
+    1000,
+    12
+  ],
+  "sampling_frequency": 100.0,
+  "lead_order": [
+    "I",
+    "II",
+    "III",
+    "AVR",
+    "AVL",
+    "AVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "model_input_shape": [
+    1,
+    12,
+    1000,
+    1
+  ],
+  "model_inference_performed": false,
+  "training_performed": false
+}
